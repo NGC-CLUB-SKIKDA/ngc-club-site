@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>New Generation Club – University of 20 August 1955, Skikda</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap">
+  <a class="brand" href="#top"><img src="images/logo.png" alt="New Generation Club logo"><span>New Generation Club</span></a>
+  <div class="acts"><button id="bIn">Sign in</button><button id="bReg" class="solid">Register</button></div>
+</div></header>
+
+<main id="top">
+<div class="hero">
+  <i class="blob b1"></i><i class="blob b2"></i>
+  <canvas id="net" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="badge"><img src="images/logo.png" alt=""></div>
+    <div class="chip">Hey there! Ready to build something awesome?</div>
+    <h1>New <span class="grad">Generation</span> Club</h1>
+    <div class="sub">University of 20 August 1955 – Skikda</div>
+    <div class="pill"><span>Build</span><span>Connect</span><span>Inspire</span></div>
+    <p>A space where creativity meets science, ideas turn into projects, and young minds come together to build a better future.</p>
+    <p id="welcome" class="sub" style="margin-top:1.2rem"></p>
+  </div>
+</div>
+
+<section id="depts"><div class="wrap">
+  <h2>Our <span class="grad">Departments.</span></h2>
+  <p class="lead">Pick a department to see what it does and how to get involved.</p>
+  <div class="banners">
+    <button class="card" data-d="petro" style="--a:#35e0c1"><span class="num">/ 01</span><span class="arr">↗</span><div class="ico"><svg viewBox="0 0 48 48"><path d="M18 6h12M20 6v14L8 40a3 3 0 0 0 3 4h26a3 3 0 0 0 3-4L28 20V6M13 32h22"/></svg></div><span class="cat">SCIENCE / INDUSTRY</span><span class="nm">Petrochemistry &amp; Chemical Engineering</span><span class="desc">Explore the scientific principles and industrial applications of chemistry and petrochemistry.</span><span class="more">Explore department →</span></button>
+    <button class="card" data-d="cs" style="--a:#5aa9ff"><span class="num">/ 02</span><span class="arr">↗</span><div class="ico"><svg viewBox="0 0 48 48"><rect x="12" y="12" width="24" height="24" rx="3"/><path d="M18 18h12v12H18zM18 6v6M30 6v6M18 36v6M30 36v6M6 18h6M6 30h6M36 18h6M36 30h6"/></svg></div><span class="cat">AI / INDUSTRIAL SYSTEMS</span><span class="nm">Computer Science, Robotics &amp; Automation</span><span class="desc">Bring AI, automation, simulation and robotics together with petrochemical engineering.</span><span class="more">Explore department →</span></button>
+    <button class="card" data-d="comm" style="--a:#ffb547"><span class="num">/ 03</span><span class="arr">↗</span><div class="ico"><svg viewBox="0 0 48 48"><path d="M6 18v12h8l14 8V10l-14 8zM34 17a9 9 0 0 1 0 14M39 12a16 16 0 0 1 0 24"/></svg></div><span class="cat">COMMUNICATION / PARTNERSHIPS</span><span class="nm">Communications &amp; External Relations</span><span class="desc">The voice of the club: media, partnerships and institutional communication.</span><span class="more">Explore department →</span></button>
+    <button class="card" data-d="design" style="--a:#ff6fb5"><span class="num">/ 04</span><span class="arr">↗</span><div class="ico"><svg viewBox="0 0 48 48"><path d="M24 6a18 18 0 1 0 0 36c3 0 4-2 4-4s-2-3-1-5 3-2 6-2 6-3 6-7A18 18 0 0 0 24 6z"/><circle cx="14" cy="22" r="2"/><circle cx="20" cy="14" r="2"/><circle cx="30" cy="14" r="2"/></svg></div><span class="cat">CREATIVITY / VISUAL IDENTITY</span><span class="nm">Decoration &amp; Design</span><span class="desc">Visual identity, creative materials and the decoration of our events.</span><span class="more">Explore department →</span></button>
+  </div>
+</div></section>
+
+<section class="collab" id="together"><div class="wrap">
+  <h2>Working Together Towards <span class="grad">Innovation</span></h2>
+  <p class="lead">Each department brings a different set of skills and perspectives to New Generation. While their responsibilities differ, they share one common objective: creating an environment where knowledge, creativity, and collaboration lead to meaningful achievements.</p>
+  <p class="lead" style="margin-bottom:0">By combining scientific research, technological development, communication, and creative design, our departments work together to transform ideas into projects and make innovation a collective experience.</p>
+  <div class="chips"><span style="--a:#35e0c1">Science</span><span style="--a:#5aa9ff">Technology</span><span style="--a:#ffb547">Communication</span><span style="--a:#ff6fb5">Design</span></div>
+</div></section>
+
+<section class="fb" id="feedback"><div class="wrap">
+  <h2>Feedback and <span class="grad">ideas</span></h2>
+  <p class="lead">Tell us what to improve or what you want the club to do next.</p>
+  <form class="form" id="fbForm" style="max-width:640px">
+    <label>Your feedback or idea<textarea name="m" rows="4" required></textarea></label>
+    <div><button class="solid" type="submit">Send feedback</button></div>
+    <p class="msg" id="fbMsg" role="status"></p>
+  </form>
+</div></section>
+
+<section class="qr" id="social"><div class="wrap">
+  <h2>Join our community</h2>
+  <img src="images/qr.png" alt="QR code linking to the club's social media">
+  <span class="cta">Scan to join our community</span>
+  <div class="soc">
+    <a href="#social" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1.5 2 7.5 5.5L19.500 7z"/></svg></a>
+    <a href="#social" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm5 3.500a4.500 4.500 0 1 1 0 9 4.500 4.500 0 0 1 0-9zm0 2a2.500 2.500 0 1 0 0 5 2.500 2.500 0 0 0 0-5z"/></svg></a>
+    <a href="#social" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M14 3h3a5 5 0 0 0 4 4v3a8 8 0 0 1-4-1.200V15a6 6 0 1 1-6-6v3a3 3 0 1 0 3 3z"/></svg></a>
+    <a href="#social" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 22v-8h3l1-4h-4V8c0-1 .5-2 2-2h2V2.500C17.500 2.400 16.500 2 15 2c-3 0-5 2-5 5v3H7v4h3v8z"/></svg></a>
+  </div>
+</div></section>
+</main>
+
+<div class="panel" id="panel" hidden role="dialog" aria-modal="true" aria-labelledby="pT">
+  <div class="top"><div class="wrap"><button id="back">← Back</button><div class="pico" id="pI"></div><h2 id="pT"></h2></div></div>
+  <div class="wrap body" id="pB"></div>
+</div>
+
+<dialog id="regD"><h2 style="font-size:1.5rem">Become a member</h2><p class="lead" style="margin-bottom:1rem">Fill in your details to register.</p>
+<form class="form" id="regF">
+  <div class="row"><label>First name<input name="fn" required autocomplete="given-name"></label><label>Last name<input name="ln" required autocomplete="family-name"></label></div>
+  <label>Date of birth<input type="date" name="bd" required autocomplete="bday"></label>
+  <div class="row"><label>What do you study?<input name="st" required></label>
+  <label>Year<select name="yr" required><option value="">Choose</option><option>1st year</option><option>2nd year</option><option>3rd year</option><option>Master 1</option><option>Master 2</option><option>PhD</option></select></label></div>
+  <label>Department of interest<select name="dp" required><option value="">Choose</option><option>Petrochemistry &amp; Chemical Engineering</option><option>Computer Science, Robotics &amp; Automation</option><option>Communications &amp; External Relations</option><option>Decoration &amp; Design</option></select></label>
+  <label>Your skills<textarea name="sk" rows="3" placeholder="Python, drawing, video editing, public speaking..."></textarea></label>
+  <p class="msg" id="regM" role="status"></p>
+  <div style="display:flex;gap:.6rem;justify-content:flex-end"><button type="button" data-close>Cancel</button><button class="solid" type="submit">Register</button></div>
+</form></dialog>
+
+<dialog id="inD"><h2 style="font-size:1.5rem">Sign in</h2><p class="lead" style="margin-bottom:1rem">Use the details you registered with.</p>
+<form class="form" id="inF">
+  <div class="row"><label>First name<input name="fn" required></label><label>Last name<input name="ln" required></label></div>
+  <label>Date of birth<input type="date" name="bd" required></label>
+  <p class="msg" id="inM" role="status"></p>
+  <div style="display:flex;gap:.6rem;justify-content:flex-end"><button type="button" data-close>Cancel</button><button class="solid" type="submit">Sign in</button></div>
+</form></dialog>
+
+<footer>© 2026 New Generation Club · University of 20 August 1955 – Skikda</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

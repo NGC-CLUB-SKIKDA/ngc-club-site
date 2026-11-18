@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0a3a80"/><stop offset="1" stop-color="#001f4d"/></linearGradient><radialGradient id="r"><stop offset="0" stop-color="#35e0c1" stop-opacity=".45"/><stop offset="1" stop-color="#35e0c1" stop-opacity="0"/></radialGradient></defs><rect width="800" height="400" rx="24" fill="url(#g)"/><circle cx="620" cy="140" r="260" fill="url(#r)"/><g fill="none" stroke="#35e0c1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><rect x="90" y="150" width="60" height="190" rx="8"/><rect x="180" y="90" width="70" height="250" rx="8"/><rect x="280" y="190" width="55" height="150"/>
+<path d="M150 200h30M250 250h30M60 340h340M215 90V60M205 60c0-18 20-26 10-48 24 12 34 36 20 48z"/>
+<path d="M470 120h60M485 120v70l-60 110a14 14 0 0 0 12 20h160a14 14 0 0 0 12-20l-60-110v-70M450 290h140"/>
+<circle cx="520" cy="250" r="8"/><circle cx="548" cy="220" r="6"/><circle cx="505" cy="215" r="5"/>
+<path d="M650 100l30-17 30 17v34l-30 17-30-17zM710 117l30-17 30 17v34l-30 17-30-17z" stroke-width="3"/></g></svg>
