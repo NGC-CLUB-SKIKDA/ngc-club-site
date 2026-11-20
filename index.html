@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>New Generation Club – University of 20 August 1955, Skikda</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500;600&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="annc" id="annc" role="region" aria-label="Announcement" hidden><span class="dot"></span><span id="anncT"></span><a id="anncL" href="#events" hidden></a><button id="anncX" type="button" aria-label="Dismiss">&times;</button></div>
+<header><div class="wrap">
+  <a class="brand" href="#top"><img src="images/logo.png" alt="New Generation Club logo"><span>New Generation Club</span></a>
+  <div class="acts"><button id="bLang" class="lang" type="button">العربية</button><button id="bIn">Sign in</button><button id="bReg" class="solid">Register</button></div>
+</div></header>
+
+<main id="top">
+<div class="hero">
+  <i class="blob b1"></i><i class="blob b2"></i>
+  <canvas id="net" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="badge"><img src="images/logo.png" alt=""></div>
+    <div class="chip">Hey there! Ready to build something awesome?</div>
+    <h1>New <span class="grad">Generation</span> Club</h1>
+    <div class="sub">University of 20 August 1955 – Skikda</div>
+    <div class="pill"><span>Build</span><span>Connect</span><span>Inspire</span></div>
+    <p>A space where creativity meets science, ideas turn into projects, and young minds come together to build a better future.</p>
+    <p id="welcome" class="sub" style="margin-top:1.2rem"></p>
+  </div>
+</div>
+
+<section id="depts"><div class="wrap">
+  <h2>Our <span class="grad">Departments.</span></h2>
+  <p class="lead">Pick a department to see what it does and how to get involved.</p>
+  <div class="banners">
+    <button class="card" data-d="petro" style="--a:#35e0c1"><span class="num">/ 01</span><span class="arr">↗</span><div class="ico"><svg viewBox="0 0 48 48"><path d="M18 6h12M20 6v14L8 40a3 3 0 0 0 3 4h26a3 3 0 0 0 3-4L28 20V6M13 32h22"/></svg></div><span class="cat">SCIENCE / INDUSTRY</span><span class="nm">Petrochemistry &amp; Chemical Engineering</span><span class="desc">Explore the scientific principles and industrial applications of chemistry and petrochemistry.</span><span class="more">Explore department →</span></button>
+    <button class="card" data-d="cs" style="--a:#5aa9ff"><span class="num">/ 02</span><span class="arr">↗</span><div class="ico"><svg viewBox="0 0 48 48"><rect x="12" y="12" width="24" height="24" rx="3"/><path d="M18 18h12v12H18zM18 6v6M30 6v6M18 36v6M30 36v6M6 18h6M6 30h6M36 18h6M36 30h6"/></svg></div><span class="cat">AI / INDUSTRIAL SYSTEMS</span><span class="nm">Computer Science, Robotics &amp; Automation</span><span class="desc">Bring AI, automation, simulation and robotics together with petrochemical engineering.</span><span class="more">Explore department →</span></button>
+    <button class="card" data-d="comm" style="--a:#ffb547"><span class="num">/ 03</span><span class="arr">↗</span><div class="ico"><svg viewBox="0 0 48 48"><path d="M6 18v12h8l14 8V10l-14 8zM34 17a9 9 0 0 1 0 14M39 12a16 16 0 0 1 0 24"/></svg></div><span class="cat">COMMUNICATION / PARTNERSHIPS</span><span class="nm">Communications &amp; External Relations</span><span class="desc">The voice of the club: media, partnerships and institutional communication.</span><span class="more">Explore department →</span></button>
+    <button class="card" data-d="design" style="--a:#ff6fb5"><span class="num">/ 04</span><span class="arr">↗</span><div class="ico"><svg viewBox="0 0 48 48"><path d="M24 6a18 18 0 1 0 0 36c3 0 4-2 4-4s-2-3-1-5 3-2 6-2 6-3 6-7A18 18 0 0 0 24 6z"/><circle cx="14" cy="22" r="2"/><circle cx="20" cy="14" r="2"/><circle cx="30" cy="14" r="2"/></svg></div><span class="cat">CREATIVITY / VISUAL IDENTITY</span><span class="nm">Decoration &amp; Design</span><span class="desc">Visual identity, creative materials and the decoration of our events.</span><span class="more">Explore department →</span></button>
+    <button class="card" data-d="hr" style="--a:#c48bff"><span class="num">/ 05</span><span class="arr">↗</span><div class="ico"><svg viewBox="0 0 48 48"><circle cx="24" cy="16" r="7"/><path d="M10 40c0-8 6-13 14-13s14 5 14 13"/><circle cx="9" cy="22" r="4"/><circle cx="39" cy="22" r="4"/><path d="M2 36c0-5 3-8 7-8M46 36c0-5-3-8-7-8"/></svg></div><span class="cat">PEOPLE / CULTURE</span><span class="nm">Human Resources</span><span class="desc">Welcoming members, building team spirit and helping everyone find their place.</span><span class="more">Explore department →</span></button>
+  </div>
+</div></section>
+
+<section class="events" id="events"><div class="wrap">
+  <h2>Our <span class="grad">Events.</span></h2>
+  <p class="lead">From open-mic nights to hackathons, here is what happens when New Generation gets together.</p>
+  <div class="ticker" aria-hidden="true"><div class="tick" id="tick"></div></div>
+  <div class="evchips" id="evChips"></div>
+  <div class="evgrid" id="evGrid"></div>
+  <div class="cta2" style="--a:#ffb547"><div><h3>Got an event idea?</h3><p>Tell us in the feedback box and we may run it next.</p></div><a class="btn solid" href="#feedback">Suggest an event</a></div>
+</div></section>
+
+<section class="collab" id="together"><div class="wrap">
+  <h2>Working Together Towards <span class="grad">Innovation</span></h2>
+  <p class="lead">Each department brings a different set of skills and perspectives to New Generation. While their responsibilities differ, they share one common objective: creating an environment where knowledge, creativity, and collaboration lead to meaningful achievements.</p>
+  <p class="lead" style="margin-bottom:0">By combining scientific research, technological development, communication, and creative design, our departments work together to transform ideas into projects and make innovation a collective experience.</p>
+  <div class="chips"><span style="--a:#35e0c1">Science</span><span style="--a:#5aa9ff">Technology</span><span style="--a:#ffb547">Communication</span><span style="--a:#ff6fb5">Design</span></div>
+</div></section>
+<!-- Admin Sign-In Box -->
+
+<!-- Admin Dashboard Section (hidden until signed in as the admin email) -->
+<section id="indexAdminDashboard" style="display: none; max-width: 800px; margin: 30px auto; padding: 24px; border: 1px solid #ccc; border-radius: 8px; background: #f9f9f9;">
+  <div style="display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <h2>Club Feedback Dashboard</h2>
+      <p style="margin: 4px 0;">Signed in as: <strong id="signedInAdminEmail"></strong></p>
+    </div>
+    <button id="adminLogoutBtn" style="padding: 8px 14px; cursor: pointer;">Log Out</button>
+  </div>
+
+  <h3 style="margin-top: 20px;">Member Applications</h3>
+  <div id="memList"><p>Loading applications...</p></div>
+
+  <h3 style="margin-top: 20px;">Announcement Bar</h3>
+  <form id="annForm" style="background:#fff;padding:14px;border-radius:6px;display:grid;gap:8px;margin-bottom:10px;">
+    <label><input type="checkbox" id="annOn" style="width:auto;"> Show the bar</label>
+    <input id="annEn" placeholder="Message in English" maxlength="140" style="padding:8px;">
+    <input id="annAr" placeholder="الرسالة بالعربية" maxlength="140" dir="rtl" style="padding:8px;">
+    <input id="annLink" placeholder="Link (optional): #events, https://..., mailto:..." style="padding:8px;">
+    <div><button type="submit" style="padding:8px 16px; cursor:pointer;">Save announcement</button> <span id="annSaved" style="margin-inline-start:8px;"></span></div>
+  </form>
+
+  <h3 style="margin-top: 20px;">Submitted Feedback</h3>
+  <div id="indexFeedbackList">
+    <p>Loading feedback...</p>
+  </div>
+</section>
+<section class="team" id="team"><div class="wrap">
+  <div class="teamhead">
+    <span class="eyebrow">/ THE ADMINISTRATION</span>
+    <h2>Our <span class="grad">Team.</span></h2>
+    <p class="lead2">The administration is the backbone of New Generation. It turns ideas into authorized, scheduled and well-organized reality, so every department can focus on what it does best.</p>
+    <p class="rolelabel">WHO MAKES IT WORK</p>
+    <div class="roles"><span><i></i>President</span><span><i></i>Vice President</span><span><i></i>General Secretary</span><span><i></i>Treasurer</span><span><i></i>Logistics Coordinator</span><span><i></i>Department Heads</span></div>
+  </div>
+  <div class="bento">
+    <article class="bt w4" style="--a:#ffb547"><svg class="ic" viewBox="0 0 48 48" aria-hidden="true"><path d="M12 6h18l8 8v28H12z"/><path d="M30 6v8h8M18 24h12M18 31h8"/><circle cx="33" cy="35" r="5"/></svg><div><h3>Official Paperwork and Authorizations</h3><p>Requests and permits from the university administration, official letters, partnership agreements and every document the club needs to operate.</p></div></article>
+    <article class="bt " style="--a:#35e0c1"><svg class="ic" viewBox="0 0 48 48" aria-hidden="true"><path d="M6 42h36M10 42V16l14-9 14 9v26M20 42V30h8v12M17 21h4M27 21h4"/></svg><div><h3>Rooms, Equipment and Logistics</h3><p>Booking classrooms and amphitheaters, preparing equipment and supplies, and making sure every event is set up on time.</p></div></article>
+    <article class="bt " style="--a:#5aa9ff"><svg class="ic" viewBox="0 0 48 48" aria-hidden="true"><rect x="12" y="8" width="24" height="34" rx="3"/><path d="M19 8V5h10v3M18 20h12M18 27h12M18 34h7"/></svg><div><h3>Meetings and Minutes (PVs)</h3><p>Preparing agendas, writing official meeting reports (PVs) and tracking decisions so nothing is forgotten.</p></div></article>
+    <article class="bt w4 hasnet" style="--a:#c48bff"><svg class="ic" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="5"/><circle cx="8" cy="10" r="3"/><circle cx="40" cy="10" r="3"/><circle cx="8" cy="38" r="3"/><circle cx="40" cy="38" r="3"/><path d="M11 12l9 8M37 12l-9 8M11 36l9-8M37 36l-9-8"/></svg><div><h3>Coordination Between Departments</h3><p>Keeping schedules, workflows and communication aligned across Computer Science, Petrochemistry, Communications, Design and Human Resources.</p></div><svg class="net" viewBox="0 0 140 120" aria-hidden="true"><g stroke="#c48bff" stroke-width="1.5" opacity=".7"><path d="M70 60L70 12M70 60L120 46M70 60L102 104M70 60L38 104M70 60L20 46"/></g><circle cx="70" cy="60" r="9" fill="#c48bff"/><circle cx="70" cy="12" r="7" fill="#5aa9ff"/><circle cx="120" cy="46" r="7" fill="#35e0c1"/><circle cx="102" cy="104" r="7" fill="#ffb547"/><circle cx="38" cy="104" r="7" fill="#ff6fb5"/><circle cx="20" cy="46" r="7" fill="#c48bff"/></svg></article>
+    <article class="bt " style="--a:#ff6fb5"><svg class="ic" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="16"/><path d="M24 14v20M29 19c-1-2-3-3-5-3-3 0-5 2-5 4 0 6 10 3 10 9 0 2-2 4-5 4-2 0-4-1-5-3"/></svg><div><h3>Budget and Resources</h3><p>Tracking expenses and contributions, handling routine requests, and making sure funds and equipment are used wisely.</p></div></article>
+    <article class="bt " style="--a:#8db8f5"><svg class="ic" viewBox="0 0 48 48" aria-hidden="true"><path d="M6 14h14l4 5h18v21H6z"/><path d="M6 25h36"/></svg><div><h3>Archives and Documentation</h3><p>Keeping an organized archive of reports, photos, projects and contracts, so future members can build on what we did.</p></div></article>
+    <article class="bt " style="--a:#35e0c1"><svg class="ic" viewBox="0 0 48 48" aria-hidden="true"><circle cx="17" cy="16" r="6"/><circle cx="33" cy="18" r="5"/><path d="M5 40c0-8 5-13 12-13s12 5 12 13M30 29c7 0 13 4 13 11"/></svg><div><h3>Rules and Member Support</h3><p>Turning leadership decisions into clear procedures, applying the club's internal rules fairly, and answering members' questions.</p></div></article>
+    <article class="bt w6" style="--a:#ffb547"><svg class="ic" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5l14 5v11c0 9-6 16-14 20C16 37 10 30 10 21V10z"/><path d="M18 23l5 5 9-10"/></svg><div><h3>Safety and Compliance</h3><p>Making sure events and lab activities follow university rules and safety requirements.</p></div></article>
+  </div>
+  <div class="teamcta"><p>Questions about the club, permissions or partnerships? Write to the administration.</p><a class="btn solid" href="mailto:new.generation.club.21@gmail.com">Contact the administration</a></div>
+</div></section>
+
+<section class="fb" id="feedback"><div class="wrap">
+  <h2>Feedback and <span class="grad">ideas</span></h2>
+  <p class="lead">Tell us what to improve or what you want the club to do next.</p>
+  <form class="form" id="fbForm" style="max-width:640px">
+    <label>Your feedback or idea<textarea name="m" rows="4" required></textarea></label>
+    <div><button class="solid" type="submit">Send feedback</button></div>
+    <p class="msg" id="fbMsg" role="status"></p>
+  </form>
+</div></section>
+
+<section class="qr" id="social"><div class="wrap">
+  <h2>Join our community</h2>
+  <img src="images/qr.png" alt="QR code linking to the club's social media">
+  <span class="cta">Scan to join our community</span>
+  <div class="soc">
+    <a href="mailto:new.generation.club.21@gmail.com" aria-label="Gmail"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1.5 2 7.5 5.5L19.500 7z"/></svg></a>
+    <a href="https://www.instagram.com/new_generation.club?knvt=MTg3bzJmcnJra2Mzdg%3D%3D&amp;utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm5 3.500a4.500 4.500 0 1 1 0 9 4.500 4.500 0 0 1 0-9zm0 2a2.500 2.500 0 1 0 0 5 2.500 2.500 0 0 0 0-5z"/></svg></a>
+    <a href="https://tiktok.com/@newgenerationclub2026?_r=1&amp;_t=ZS-9BYoWmQWslx" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M14 3h3a5 5 0 0 0 4 4v3a8 8 0 0 1-4-1.200V15a6 6 0 1 1-6-6v3a3 3 0 1 0 3 3z"/></svg></a>
+    <a href="https://www.facebook.com/share/1Bwz97B5zo/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 22v-8h3l1-4h-4V8c0-1 .5-2 2-2h2V2.500C17.500 2.400 16.500 2 15 2c-3 0-5 2-5 5v3H7v4h3v8z"/></svg></a>
+  </div>
+</div></section>
+</main>
+
+<div class="panel" id="panel" hidden role="dialog" aria-modal="true" aria-labelledby="pT">
+  <div class="pbg" id="pbg"></div>
+  <div class="top"><div class="wrap"><button id="back">← Back</button><div class="pico" id="pI"></div><h2 id="pT"></h2></div></div>
+  <div class="wrap body" id="pB"></div>
+</div>
+
+<dialog id="regD"><h2 style="font-size:1.5rem">Become a member</h2><p class="lead" style="margin-bottom:1rem">Fill in your details to register.</p>
+<form class="form" id="regF">
+  <div class="row"><label>First name<input name="fn" required autocomplete="given-name"></label><label>Last name<input name="ln" required autocomplete="family-name"></label></div>
+  <div class="row"><label>Email<input type="email" name="em" required autocomplete="email"></label><label>Password<input type="password" name="pw" required autocomplete="new-password" minlength="6"></label></div>
+  <label>Date of birth<input type="date" name="bd" required autocomplete="bday"></label>
+  <div class="row"><label>What do you study?<input name="st" required></label>
+  <label>Year<select name="yr" required><option value="">Choose</option><option>1st year</option><option>2nd year</option><option>3rd year</option><option>Master 1</option><option>Master 2</option><option>PhD</option></select></label></div>
+  <label>Department of interest<select name="dp" required><option value="">Choose</option><option>Petrochemistry &amp; Chemical Engineering</option><option>Computer Science, Robotics &amp; Automation</option><option>Communications &amp; External Relations</option><option>Decoration &amp; Design</option><option>Human Resources</option></select></label>
+  <label>Your skills<textarea name="sk" rows="3" placeholder="Python, drawing, video editing, public speaking..."></textarea></label>
+  <p class="msg" id="regM" role="status"></p>
+  <div style="display:flex;gap:.6rem;justify-content:flex-end"><button type="button" data-close>Cancel</button><button class="solid" type="submit">Register</button></div>
+</form></dialog>
+<dialog id="inD"><h2 style="font-size:1.5rem">Sign in</h2><p class="lead" style="margin-bottom:1rem">Sign in with your email and password.</p>
+<form class="form" id="inF">
+  <label>Email<input type="email" name="em" required autocomplete="email"></label>
+  <label>Password<input type="password" name="pw" required autocomplete="current-password"></label>
+  <p class="msg" id="inM" role="status"></p>
+  <div style="display:flex;gap:.6rem;justify-content:flex-end"><button type="button" data-close>Cancel</button><button class="solid" type="submit">Sign in</button></div>
+</form></dialog>
+
+<footer>© 2026 New Generation Club · University of 20 August 1955 – Skikda</footer>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="i18n.js"></script>
+<script src="script.js"></script>
+<script>
+const firebaseConfig = {
+  apiKey: "AIzaSyCAo1GzLvshxZcLjLQG-z_gtKP_BuD4YFY",
+  authDomain: "ngc-club-6d26d.firebaseapp.com",
+  projectId: "ngc-club-6d26d",
+  storageBucket: "ngc-club-6d26d.firebasestorage.app",
+  messagingSenderId: "288377065925",
+  appId: "1:288377065925:web:8152a44965e05df350fbac"
+};
+
+if (!firebase.apps.length) {
+  firebase.initializeApp(firebaseConfig);
+}
+const db = firebase.firestore();
+const T = (s) => NGC.T(s);
+const ADMIN_EMAIL = "new.generation.club.21@gmail.com";
+
+const loginSection = document.getElementById("adminLoginSection");
+const loginForm = document.getElementById("adminLoginForm");
+const loginError = document.getElementById("adminLoginError");
+const dashboardSection = document.getElementById("indexAdminDashboard");
+const signedInEmailEl = document.getElementById("signedInAdminEmail");
+const feedbackListEl = document.getElementById("indexFeedbackList");
+const logoutBtn = document.getElementById("adminLogoutBtn");
+
+if (loginForm) {
+  loginForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    loginError.textContent = "";
+
+    const email = document.getElementById("adminEmail").value.trim();
+    const password = document.getElementById("adminPassword").value;
+
+    try {
+      await firebase.auth().signInWithEmailAndPassword(email, password);
+    } catch (err) {
+      loginError.textContent = err.message;
+    }
+  });
+}
+
+if (logoutBtn) {
+  logoutBtn.addEventListener("click", async () => {
+    await firebase.auth().signOut();
+  });
+}
+
+firebase.auth().onAuthStateChanged((user) => {
+  if (user && user.email === ADMIN_EMAIL) {
+    if (loginSection) loginSection.style.display = "none";
+    if (dashboardSection) dashboardSection.style.display = "block";
+    if (signedInEmailEl) signedInEmailEl.textContent = user.email;
+    loadIndexFeedback();
+    loadMembers();
+  } else {
+    if (dashboardSection) dashboardSection.style.display = "none";
+    if (loginSection) loginSection.style.display = "block";
+  }
+});
+const fbForm = document.getElementById("fbForm");
+const fbMsg = document.getElementById("fbMsg");
+
+if (fbForm) {
+  fbForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const message = fbForm.m.value.trim();
+    if (!message) return;
+
+    if (fbMsg) fbMsg.textContent = T("Sending...");
+
+    try {
+      await db.collection("feedback").add({
+        message: message,
+        createdAt: firebase.firestore.FieldValue.serverTimestamp()
+      });
+
+      fbForm.reset();
+      if (fbMsg) {
+        fbMsg.innerHTML =
+          T("Thank you! Your feedback was saved.") + " " +
+          `<a href="mailto:new.generation.club.21@gmail.com?subject=${encodeURIComponent("Club feedback")}&body=${encodeURIComponent(message)}">${T("Or send by email")}</a>.`;
+      }
+
+      const currentUser = firebase.auth().currentUser;
+      if (currentUser && currentUser.email === ADMIN_EMAIL) {
+        loadIndexFeedback();
+      }
+    } catch (err) {
+      console.error("Failed to save feedback:", err);
+      if (fbMsg) {
+        fbMsg.textContent = T("Could not save feedback. Check Firestore rules and connection.");
+      }
+    }
+  });
+}
+async function loadIndexFeedback() {
+  if (!feedbackListEl) return;
+  feedbackListEl.innerHTML = "<p>Loading feedback...</p>";
+
+  try {
+    const snapshot = await db.collection("feedback").orderBy("createdAt", "desc").get();
+    feedbackListEl.innerHTML = "";
+
+    if (snapshot.empty) {
+      feedbackListEl.innerHTML = "<p>No feedback messages yet.</p>";
+      return;
+    }
+
+    snapshot.forEach((doc) => {
+      const data = doc.data();
+      const dateStr = data.createdAt?.toDate
+        ? data.createdAt.toDate().toLocaleString()
+        : "No date";
+
+      const item = document.createElement("div");
+      item.style.cssText = "background:#fff; border-left:4px solid #333; padding:12px; margin-bottom:10px; border-radius:4px;";
+
+      const msgP = document.createElement("p");
+      msgP.style.margin = "0 0 6px 0";
+      msgP.textContent = data.message || "(empty message)";
+
+      const timeSmall = document.createElement("small");
+      timeSmall.style.color = "#666";
+      timeSmall.textContent = `Submitted: ${dateStr}`;
+
+      item.appendChild(msgP);
+      item.appendChild(timeSmall);
+      feedbackListEl.appendChild(item);
+    });
+  } catch (err) {
+    console.error("Failed to load feedback:", err);
+    feedbackListEl.innerHTML = "<p style='color:red;'>Could not load feedback. Check Firestore rules and connection.</p>";
+  }
+}
+const inForm = document.getElementById("inF");
+const inMsg = document.getElementById("inM");
+const inDialog = document.getElementById("inD");
+
+if (inForm) {
+  inForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    if (inMsg) inMsg.textContent = T("Signing in...");
+
+    const email = inForm.em.value.trim();
+    const password = inForm.pw.value;
+
+    try {
+      await firebase.auth().signInWithEmailAndPassword(email, password);
+      const u = firebase.auth().currentUser;
+      if (u && u.email !== ADMIN_EMAIL) {
+        // Only approved members can stay signed in
+        const snap = await db.collection("members").doc(u.uid).get();
+        const st = snap.exists ? snap.data().status : "pending";
+        if (st !== "approved") {
+          await firebase.auth().signOut();
+          if (inMsg) inMsg.textContent = T(st === "rejected" ? "Your application was not accepted. Please contact the admins by email." : "Your application is still pending. Please wait for the admins' reply by email.");
+          return;
+        }
+      }
+      inForm.reset();
+      if (inMsg) inMsg.textContent = T("Signed in!");
+      if (inDialog && inDialog.open) inDialog.close();
+      if (u && u.email === ADMIN_EMAIL && dashboardSection) {
+        // The admin signs in with the normal Sign in button; the dashboard then appears and we scroll to it
+        setTimeout(() => dashboardSection.scrollIntoView({ behavior: "smooth" }), 500);
+      }
+    } catch (err) {
+      console.error("Sign-in error:", err);
+      if (inMsg) inMsg.textContent = err.message;
+    }
+  });
+}
+
+// ---- Member registration: creates the account + a "pending" application. Admins approve it from the dashboard.
+const regForm = document.getElementById("regF");
+const regMsg = document.getElementById("regM");
+if (regForm) {
+  regForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    regMsg.textContent = T("Creating your account...");
+    let cred = null;
+    try {
+      const g = (n) => regForm[n].value.trim();
+      const profile = { firstName: g("fn"), lastName: g("ln"), email: g("em"), birthday: regForm.bd.value, study: g("st"), year: regForm.yr.value, department: regForm.dp.value, skills: g("sk") };
+      cred = await firebase.auth().createUserWithEmailAndPassword(profile.email, regForm.pw.value);
+      await db.collection("members").doc(cred.user.uid).set({ ...profile, status: "pending", createdAt: firebase.firestore.FieldValue.serverTimestamp() });
+      try { await firebase.auth().signOut(); } catch (e2) {}
+      regForm.reset();
+      regMsg.textContent = T("Application received! Please wait for the admins' reply by email.");
+      NGC.confetti(document.getElementById("regD"));
+    } catch (err) {
+      console.error("Registration error:", err);
+      if (cred && cred.user) { try { await cred.user.delete(); } catch (e3) {} }
+      regMsg.textContent = err.code === "auth/email-already-in-use" ? T("This email is already registered. Use Sign in.")
+        : err.code === "auth/weak-password" ? T("Password must be at least 6 characters.")
+        : T("Registration failed. Please try again.") + " (" + (err.code || "error") + ")";
+    }
+  });
+}
+// Greet signed-in members by first name
+firebase.auth().onAuthStateChanged(async (u) => {
+  if (!u) { NGC.welcome(""); return; }
+  try { const s = await db.collection("members").doc(u.uid).get(); NGC.welcome(s.exists && s.data().status === "approved" ? s.data().firstName : ""); } catch (e) {}
+});
+
+// ---- Admin: member applications (approve / reject / email the applicant)
+const memListEl = document.getElementById("memList");
+async function loadMembers() {
+  if (!memListEl) return;
+  memListEl.innerHTML = "<p>Loading applications...</p>";
+  try {
+    const snap = await db.collection("members").orderBy("createdAt", "desc").get();
+    memListEl.innerHTML = "";
+    if (snap.empty) { memListEl.innerHTML = "<p>No applications yet.</p>"; return; }
+    const colors = { pending: "#e6a100", approved: "#1a9d4b", rejected: "#c0392b" };
+    snap.forEach((d) => {
+      const m = d.data(), st = m.status || "pending";
+      const box = document.createElement("div");
+      box.style.cssText = "background:#fff;border-left:4px solid " + (colors[st] || "#999") + ";padding:12px;margin-bottom:10px;border-radius:4px;";
+      const title = document.createElement("strong");
+      title.textContent = (m.firstName || "") + " " + (m.lastName || "") + " - " + st.toUpperCase();
+      box.appendChild(title);
+      [["Email", m.email], ["Studies", (m.study || "") + (m.year ? " (" + m.year + ")" : "")], ["Department", m.department], ["Birthday", m.birthday], ["Skills", m.skills]].forEach(([k, v]) => {
+        const p = document.createElement("div");
+        p.style.cssText = "margin:3px 0;font-size:.92rem;";
+        p.textContent = k + ": " + (v || "-");
+        box.appendChild(p);
+      });
+      const row = document.createElement("div");
+      row.style.cssText = "margin-top:8px;display:flex;gap:8px;flex-wrap:wrap;";
+      const mk = (label, fn) => { const b = document.createElement("button"); b.type = "button"; b.textContent = label; b.style.cssText = "padding:6px 12px;cursor:pointer;"; b.onclick = fn; row.appendChild(b); };
+      const setStatus = async (v) => { try { await d.ref.update({ status: v }); loadMembers(); } catch (err) { alert("Could not update (" + (err.code || "error") + ")"); } };
+      if (st !== "approved") mk("Approve", () => setStatus("approved"));
+      if (st !== "rejected") mk("Reject", () => setStatus("rejected"));
+      const a = document.createElement("a");
+      const body = st === "rejected"
+        ? "Hello " + (m.firstName || "") + ",\n\nThank you for your interest in New Generation Club. Unfortunately we cannot accept your application right now.\n\nNew Generation Club"
+        : "Hello " + (m.firstName || "") + ",\n\nWelcome to New Generation Club! Your application to the " + (m.department || "") + " department has been accepted. You can now sign in on our website.\n\nNew Generation Club";
+      a.href = "mailto:" + (m.email || "") + "?subject=" + encodeURIComponent("Your New Generation Club application") + "&body=" + encodeURIComponent(body);
+      a.textContent = "Email the applicant";
+      a.style.cssText = "padding:6px 12px;align-self:center;";
+      row.appendChild(a);
+      box.appendChild(row);
+      memListEl.appendChild(box);
+    });
+  } catch (err) {
+    console.error("Failed to load members:", err);
+    memListEl.innerHTML = "<p style='color:red;'>Could not load applications (" + (err.code || "error") + "). Check the Firestore rules.</p>";
+  }
+}
+
+// ---- Announcement bar (Firestore: settings/announcement). Everyone can read it, only the admin can edit it.
+const annRef = db.collection("settings").doc("announcement");
+const annForm = document.getElementById("annForm");
+const fillAnn = (d) => {
+  document.getElementById("annOn").checked = d.on !== false;
+  document.getElementById("annEn").value = d.en || "";
+  document.getElementById("annAr").value = d.ar || "";
+  document.getElementById("annLink").value = d.link || "";
+};
+annRef.get()
+  .then((s) => { if (s.exists) NGC.setAnn(s.data()); fillAnn(NGC.getAnn()); })
+  .catch((e) => { console.warn("Announcement not loaded, showing the default:", e.code); fillAnn(NGC.getAnn()); });
+if (annForm) {
+  annForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const saved = document.getElementById("annSaved");
+    const data = {
+      on: document.getElementById("annOn").checked,
+      en: document.getElementById("annEn").value.trim(),
+      ar: document.getElementById("annAr").value.trim(),
+      link: document.getElementById("annLink").value.trim(),
+      updatedAt: firebase.firestore.FieldValue.serverTimestamp()
+    };
+    saved.textContent = "Saving...";
+    try {
+      await annRef.set(data);
+      NGC.setAnn({ on: data.on, en: data.en, ar: data.ar, link: data.link });
+      saved.textContent = "Saved!";
+    } catch (err) {
+      console.error("Could not save announcement:", err);
+      saved.textContent = "Could not save (" + (err.code || "error") + "). Check the Firestore rules.";
+    }
+  });
+}
+</script>
+</body>
+</html>
